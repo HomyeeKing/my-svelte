@@ -1,10 +1,12 @@
-<script>
-	export let name;
+<script lang="ts">
+    import Nested from './Nested.svelte'
+    export let  name:string,test:number
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Hello {name}! {test}</h1>
+    <p>Svelte using export statement to pass through props</p>
+    <Nested/>
 </main>
 
 <style>
